@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Program4 {
+
+	public static void main(String[] args) {	
+
+		        int  x, count = 0, i = 0;
+		        Scanner scan = new Scanner(System.in);
+		        int a[] = new int[11];
+		        System.out.println("Enter all the elements:");
+		        for(i = 0; i < 11; i++)
+		        {
+		            a[i] = scan.nextInt();
+		        }
+		        System.out.print("Enter the element of which you want to count number of occurrences:");
+		        x = scan.nextInt();
+		        for(i = 0; i < 11; i++)
+		        {
+		            if(a[i]%x == 0)
+		            {
+		                count++;
+		            }
+		        }
+		        System.out.println("Number of :"+count);
+		    }
+		}

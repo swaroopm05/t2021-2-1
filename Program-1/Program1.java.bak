@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Program1 {
+
+	public static void main(String[] args) {
+		double hai;
+Scanner scan=new Scanner(System.in);
+System.out.println("Enter the First number");
+double a=scan.nextDouble();
+System.out.println("Enter the Second number");
+double b=scan.nextDouble();
+System.out.println("Enter the Operator as mentioned hear{ [add]for+,[sub]for-,[mul]for*,[div]for/,}");
+String operator=scan.next();
+switch(operator){
+case"mul":
+	hai=a*b;
+	System.out.println("The multiplication of these numbers is"+a+"*"+b+"="+hai);
+	break;
+case"add":
+	hai=a+b;
+	System.out.println("The Addition of these numbers is"+a+"+"+b+"="+hai);
+	break;
+case"sub":
+	hai=a-b;
+	System.out.println("The Sub of these numbers is"+a+"-"+b+"="+hai);
+	break;
+case"div":
+	hai=a/b;
+	System.out.println("The Division of these numbers is "+a+"/"+b+"="+hai);
+	break;
+	default:
+		System.out.println("invalid operator  you have given");
+		break;
+}
+	}
+
+}
